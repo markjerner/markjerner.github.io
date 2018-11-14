@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic,300,300italic,regular,italic,600,600italic,700,700italic);
+
+$heading-font: 'Yeseva One', serif;
+$body-font: 'Josefin Sans', sans-serif;
+
+* {
+  font-family: $body-font;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $heading-font;
+}
+
