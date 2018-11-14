@@ -1,0 +1,7 @@
+@import './modules/colors';
+
+#helloWorld {
+  padding: 25px;
+  background-color: $dark;
+  color: $light;
+}
