@@ -1,5 +1,30 @@
 ---
 layout: wrapper
+comments: true
 ---
 
-<h3>This will be the posts content.</h3>
+<div class="post">
+  <div class="postHeader">
+    <div class="left">
+      <h2>{{ page.title }}</h2>
+      <p><i>{{ page.author }}</i></p>
+    </div>
+    <div class="right">
+      {{ page.date | date_to_string }}
+    </div>
+  </div>
+  <div class="postBody">
+    <p>{{ page.content }}</p>
+  </div>
+</div>
+
+<div class="comments">
+  <div class="commentHeader">
+    <h3>Comments</h3>
+  </div>
+  <div class="commentsBody">
+  {% if page.comments %}
+    {% include disqus.html %}
+  {% endif %}
+  </div>
+</div>

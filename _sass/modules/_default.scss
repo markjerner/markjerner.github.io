@@ -1,0 +1,19 @@
+#default {
+  width: 100%;
+  padding: 3rem 0;
+  .container {
+    width: 95%;
+    max-width: 920px;
+    min-height: 80vh;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: $white;
+    border-radius: .3rem;
+    
+  }
+
+  .pageTitle {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}

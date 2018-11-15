@@ -3,16 +3,23 @@
     <a href="/">
       <img src="../assets/img/logo.svg" alt="">
     </a>
-    
+
   </div>
 
   <div id="main-nav">
     <div class="hamburger hidden"></div>
     <nav>
       <ul>
-        <li id="homeBtn" class="active"><a href="#">Home</a></li>
-        <li id="aboutBtn"><a href="#">About</a></li>
-        <li id="blogBtn"><a href="#">Blog</a></li>
+        <a href="/">
+          <li id="homeBtn" {% if page.url=="/" %} class="active" {% endif %}>Home</li>
+        </a>
+        <a href="/about/">
+          <li id="aboutBtn" {% if page.url=="/about/" %} class="active" {% endif %}>About</li>
+        </a>
+        <a href="/blog/">
+        <li id="blogBtn" {% if page.layout=="post" %} class="active" {% endif %} {% if page.url=="/blog/" %} class="active"
+          {% endif %}>Blog</li>
+        </a>
       </ul>
 
     </nav>

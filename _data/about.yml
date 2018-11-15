@@ -1,0 +1,5 @@
+- name: "Marcus Kjerner"
+  age: "25"
+  birthPlace: "Stockholm"
+  currentPlace: "Söderköping"
+  interests: ["Computers", "Sound", "Graphics", "Golf", "Family"]

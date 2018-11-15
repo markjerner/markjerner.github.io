@@ -23,7 +23,7 @@ header {
     nav {
       ul {
         height: 100%;
-        margin-top: -2px;
+        margin-top: -3px;
         margin-right: 1rem;
 
         li {
@@ -37,19 +37,20 @@ header {
             background: lighten($dark, 2);
           }
 
-          a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $white;
-          }
+          
+        }
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $white;
         }
 
         #homeBtn {
           &:hover {
-            border-bottom: solid 3px $red;
+            border-bottom: solid 3px $green;
           }
           &.active {
-            border-bottom: solid 3px $red;
+            border-bottom: solid 3px $green;
             background: lighten($dark, 2);
           }
         }
@@ -59,23 +60,21 @@ header {
             border-bottom: solid 3px $yellow;
           }
           &.active {
-            border-bottom: solid 3px $green;
+            border-bottom: solid 3px $yellow;
             background: lighten($dark, 2);
           }
         }
 
         #blogBtn {
           &:hover {
-            border-bottom: solid 3px $green;
+            border-bottom: solid 3px $red;
           }
           &.active {
-            border-bottom: solid 3px $green;
+            border-bottom: solid 3px $red;
             background: lighten($dark, 2);
           }
         }
       }
     }
-
-
   }
 }

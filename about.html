@@ -1,0 +1,41 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+<div class="about">
+  <div class="left">
+    <div class="aboutCard">
+      <div class="profilePic">
+        <img src="../assets/img/portrait.jpg" alt="portrait">
+      </div>
+
+      <h2>{{ site.data.about[0].name }}</h2>
+      <ul id="aboutList">
+        {% for item in site.data.about %}
+        <li><b>Name: </b>{{ item.name }}</li>
+        <li><b>Age: </b>{{ item.age }}</li>
+        <li><b>Born: </b>{{ item.birthPlace }}</li>
+        <li><b>Location: </b>{{ item.currentPlace }}</li>
+        <li><b>Interests:</b>
+          {% for interest in item.interests %}
+          {% if forloop.last == false %}
+          {{ interest }},
+          {% else %}
+          & {{ interest }}.
+          {% endif %}
+          {% endfor %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+  <div class="right">
+    <h2>This some information about Me</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur accusamus odit provident error neque saepe
+      illo, consectetur aperiam incidunt doloribus voluptate repudiandae reprehenderit corporis molestias autem
+      perferendis nulla. Consequatur, quis?</p>
+  </div>
+</div>
+

@@ -1,0 +1,46 @@
+.post {
+  margin: 0 auto;
+  width: 95%;
+  margin-top: 3rem;
+  background-color: $white;
+
+  .postHeader {
+    display: flex;
+    align-items: center;
+
+    background-color: $red;
+    color: $white;
+    padding: 1rem 2rem;
+  }
+
+  .left {
+    flex-grow: 1;
+  }
+
+  .postBody {
+    padding: 2rem 2rem;
+  }
+
+  .postBtns {
+    text-align: right;
+    margin-right: 2rem;
+    padding-bottom: 1rem;
+    i {
+      font-size: 1.5rem;
+      color: $gray;
+    }
+  }
+}
+
+.comments {
+  margin: 0 auto;
+  width: 95%;
+  margin-top: 3rem;
+  background-color: $white;
+  min-height: 150px;
+
+  .commentHeader {
+    background-color: darken($light, 10);
+    padding: 1rem 2rem;
+  }
+}

@@ -1,0 +1,22 @@
+---
+layout: blog
+title: Blog
+permalink: /blog/
+---
+
+{% for post in site.posts %}
+<div class="postCard">
+  <div class="postHeader">
+    <div class="left">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p><i>{{ post.author }}</i></p>
+    </div>
+    <div class="right">
+      {{ post.date | date_to_string }}
+    </div>
+  </div>
+  <div class="postBody">
+    <p>{{ post.content | truncate: 350 }}</p>
+  </div>
+</div>
+{% endfor %}
