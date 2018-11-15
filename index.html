@@ -1,13 +1,74 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
 
 <div class="home">
-  <div id="left">
-    <h1>Marcus Kjerner</h1>
+  <div class="upper">
+    <div class="welcome">
+      <div class="header">
+        <h1>Welcome to the my portal. </h1>
+      </div>
+      <div class="content">
+        <h3>This is where i share my creations & reflections.</h3>
+      </div>
+    </div>
+
+    <div class="aboutCard">
+      <div class="header">
+        <div class="profilePic">
+          <img src="../assets/img/portrait.jpg" alt="portrait">
+        </div>
+
+      </div>
+      
+      <ul id="aboutList">
+        {% for item in site.data.about %}
+        <li><b>Name: </b>{{ item.name }}</li>
+        <li><b>Age: </b>{{ item.age }}</li>
+        <li><b>Born: </b>{{ item.birthPlace }}</li>
+        <li><b>Location: </b>{{ item.currentPlace }}</li>
+        <li><b>Interests:</b>
+          {% for interest in item.interests %}
+          {% if forloop.last == false %}
+          {{ interest }},
+          {% else %}
+          & {{ interest }}.
+          {% endif %}
+          {% endfor %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    </div>
   </div>
-  <div id="right">
-    <p>Some text</p>
+  
+
+  <div class="twoCol">
+    <div class="newsFeed">
+      <div class="header">
+        <h2>Recent Posts</h2>
+      </div>
+      <div class="content">
+        <ul>
+          {% for post in site.posts %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% if forloop.last == false %}
+          <hr>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="links">
+      <div class="header">
+        <h2>Find me elsewhere</h2>
+      </div>
+      <div class="content">
+        <i class="fab fa-github"></i>
+      </div>
+    </div>
   </div>
+
 </div>
