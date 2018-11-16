@@ -9,6 +9,10 @@
     grid-template-columns: 2fr 1fr;
     grid-gap: 2rem;
     margin-top: 5rem;
+
+    @include breakpoint(xs) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .welcome {
@@ -30,6 +34,11 @@
 .aboutCard {
   background-color: $white;
   text-align: center;
+  margin-top: 0;
+
+  @include breakpoint(xs) {
+    margin-top: 3rem;
+  }
 
   .header {
     padding-top: 4.2rem;
@@ -43,7 +52,7 @@
 
     img {
       position: absolute;
-      width: 75%;
+      max-width: 200px;
       border-radius: 50%;
       border: 2px solid $dark;
       top: -130px;
@@ -51,6 +60,11 @@
       margin-right: auto;
       left: 0;
       right: 0;
+
+      @include breakpoint(xs) {
+        max-width: 150px;
+        top: -120px;
+      }
     }
   }
 
@@ -79,9 +93,14 @@
   margin: 0 auto;
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
   padding-bottom: 5rem;
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .newsFeed {
     background-color: $white;
     min-height: 150px;
@@ -144,3 +163,6 @@
   }
 
 }
+
+
+

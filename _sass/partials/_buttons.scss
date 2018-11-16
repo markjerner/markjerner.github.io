@@ -66,3 +66,22 @@
 
 }
 
+.hamburger {
+  position: absolute;
+  z-index: 2;
+  top: 1.5rem;
+  right: 1.5rem;
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: $white;
+    color: $white;
+    margin-top: 5px;
+  }
+  transition: .8s linear;
+  transition-delay: 0;
+  &.slide {
+    right: 200px;
+    transition-delay: .2s;
+  } 
+}

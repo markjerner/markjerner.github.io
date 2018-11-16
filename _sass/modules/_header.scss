@@ -18,9 +18,27 @@ header {
   }
 
   #main-nav {
+    position: relative;
+    top: 0;
+    right: 0;
+
+    .slide-nav {
+      display: none;
+
+      @include breakpoint(xs) {
+        display: block;
+      }
+    }
+
+    
     text-align: right;
 
-    nav {
+    #std-nav {
+
+      @include breakpoint(xs) {
+        display: none;
+      }
+
       ul {
         height: 100%;
         margin-top: -3px;
@@ -33,12 +51,14 @@ header {
           padding: 0 1rem;
 
           transition: background-color 0.3s ease-in-out;
+
           &:hover {
             background: lighten($dark, 2);
           }
 
-          
+
         }
+
         a {
           text-decoration: none;
           text-transform: uppercase;
@@ -49,6 +69,7 @@ header {
           &:hover {
             border-bottom: solid 3px $green;
           }
+
           &.active {
             border-bottom: solid 3px $green;
             background: lighten($dark, 2);
@@ -59,6 +80,7 @@ header {
           &:hover {
             border-bottom: solid 3px $yellow;
           }
+
           &.active {
             border-bottom: solid 3px $yellow;
             background: lighten($dark, 2);
@@ -69,12 +91,55 @@ header {
           &:hover {
             border-bottom: solid 3px $red;
           }
+
           &.active {
             border-bottom: solid 3px $red;
             background: lighten($dark, 2);
           }
         }
       }
+
+
     }
+  }
+
+  #sm-nav {
+    background-color: rgba($dark, .9);
+    height: 100vh;
+    width: 50vw;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    right: -250px;
+    transition: 1s linear;
+    overflow: hidden;
+    line-height: 0;
+
+    ul {
+      margin-top: 5rem;
+    }
+
+    li {
+      padding: 2rem 0;
+
+      &#homeBtn {
+        border-bottom: 2px solid rgba(lighten($dark, 10), 0.5);
+      }
+    }
+
+    &.slide {
+      height: 200vh;
+      right: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      margin-right: 1rem;
+
+    }
+
   }
 }
