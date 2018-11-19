@@ -29,6 +29,15 @@ ul {
   list-style: none;
 }
 
+.post {
+  ol,
+  ul,
+  li {
+    list-style: disc;
+    margin-left: 1rem;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;

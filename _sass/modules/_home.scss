@@ -97,7 +97,7 @@
   grid-gap: 2rem;
   padding-bottom: 5rem;
 
-  @include breakpoint(sm) {
+  @include breakpoint(xs) {
     grid-template-columns: repeat(2, 1fr);
   }
 
