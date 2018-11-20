@@ -70,6 +70,17 @@
      ol,ul,li {
        list-style: disc;
      }
+
+     .blogImg {
+       
+       text-align: center;
+       img {
+         width: 80%;
+         max-width: 300px;
+         margin: 0 auto;
+         padding-bottom: 3rem;
+       }
+     }
      
   }
 }

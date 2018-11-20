@@ -19,6 +19,12 @@ comments: true
   </div>
   <div class="postBody">
     <p>{{ page.content }}</p>
+
+    {% if page.image %}
+      <div class="postImage">
+        <img src="{{site.baseurl}}/assets/img/posts/{{ page.image }}" alt="{{ page.title }}">
+      </div>
+    {% endif %}
   </div>
 </div>
 

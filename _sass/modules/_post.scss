@@ -14,11 +14,7 @@
     padding: 1rem 2rem;
   }
 
-  ol,
-  ul,
-  li {
-    list-style: default;
-  }
+ 
 
   .left {
     flex-grow: 1;
@@ -39,9 +35,16 @@
   .postBody {
     padding: 2rem 2rem;
 
-    img {
-      margin: 0 auto;
-      width: 50%;
+    .postImage {
+
+      text-align: center;
+
+      img {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 2rem 0;
+      }
     }
   }
 

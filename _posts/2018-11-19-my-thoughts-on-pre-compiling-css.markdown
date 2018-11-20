@@ -4,6 +4,7 @@ title:  "My thoughts on pre-compiling CSS."
 date:   2018-11-19 22:21:00 +0100
 categories: technology
 author: Marcus Kjerner
+image: sass.png
 ---
 ### What do you think of pre-compiling your CSS? <br><br>
 
