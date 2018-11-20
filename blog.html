@@ -14,7 +14,8 @@ permalink: /blog/
       <p><i>{{ post.author }}</i></p>
     </div>
     <div class="right">
-      {{ post.date | date_to_string }}
+      <p class="postDate">{{ post.date | date_to_string }}</p>
+      <p class="postCategory">{{ post.categories }}</p>
     </div>
   </div>
   <div class="postBody">
