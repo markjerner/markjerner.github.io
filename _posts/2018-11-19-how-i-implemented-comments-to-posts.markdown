@@ -4,6 +4,7 @@ title:  "How I implemented comments to Posts."
 date:   2018-11-19 23:02:00 +0100
 categories: technology
 author: Marcus Kjerner
+image: disqus.png
 ---
 To implement blog comments i used the _Disqus_ service. 
 <br><br>
