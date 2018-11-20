@@ -19,7 +19,12 @@
     color: $white;
     padding: 1rem 2rem;
 
-    
+    h2 {
+    transition: opacity 0.3s; 
+      &:hover {
+       opacity: 0.8;
+     } 
+    }
 
     @include breakpoint(xs) {
       

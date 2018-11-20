@@ -93,12 +93,12 @@
   margin: 0 auto;
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   padding-bottom: 5rem;
 
   @include breakpoint(xs) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .newsFeed {
@@ -110,7 +110,6 @@
       background-color: darken($light, 20);
       color: $white;
     }
-
     .content {
       li {
         cursor: pointer;
