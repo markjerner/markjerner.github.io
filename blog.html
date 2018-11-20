@@ -21,7 +21,7 @@ permalink: /blog/
   <div class="postBody">
     {% if post.image %}
     <div class="blogImg">
-      <img src="{{site.baseurl}}/assets/img/posts/{{ post.image }}" alt="{{ post.title }}">
+      <img src="{{site.baseurl}}/assets/img/{{ post.image }}" alt="{{ post.title }}">
     </div>
     {% endif %}
     <p>{{ post.content | truncate: 350 }}</p>
